@@ -1,3 +1,30 @@
 <p>
   home works!
 </p>
+
+
+<div>
+  
+  Welcome {{employeeDetail.empname}},
+
+
+  
+  <table>
+    <tr>
+      <th>EMPNAME</th>
+      <th>EMP Department</th>
+      <th>EMP Company</th>
+      <th>EMP Technology</th>
+    </tr>
+    <tr>
+      <td>{{employeeDetail.empname}}</td>
+      <td>{{employeeDetail.empdept}}</td>
+      <td>{{employeeDetail.empco}}</td>
+      <td>{{employeeDetail.emptechnology}}</td>
+    </tr>
+    
+    <!--<tr *ngFor="let emp2 of employeeDetail">
+      <td>{{employeeDetail.empname}}</td>
+    </tr>-->
+  </table>
+</div>

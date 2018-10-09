@@ -7,7 +7,7 @@ import { AllContactsDataComponent } from './all-contacts-data/all-contacts-data.
 import { LoginAppComponent } from './login-app/login-app.component';
 
 const routes: Route[] = [
-{path:'',component:HomeComponent},
+{path:'',component:SearchComponent},
 {path:'home', component:HomeComponent},
 {path:'search',component:SearchComponent},
 {path:'AllContacts', component:AllContactsDataComponent},

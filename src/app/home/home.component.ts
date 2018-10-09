@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeObject } from '../employeeObject';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  employeeDetail;
   constructor() { }
 
   ngOnInit() {
+  this.employeeDetail=JSON.parse(sessionStorage.getItem('userObject'));
+  console.log(this.employeeDetail.empname);
   }
+
+getUserObjectFromSession()
+{
+
+  
+ // this.employeeDetail=sessionStorage.getItem("userObject");
+}
 
 }
