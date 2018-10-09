@@ -1,0 +1,22 @@
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>IMAGE</th>
+        <th>Twitter</th>
+        <th>location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users$">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.image }}</td>
+        <td>{{ user.twitter }}</td>
+        <td>{{ user.location }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
