@@ -8,19 +8,23 @@ import { EmployeeObject } from '../employeeObject';
 })
 export class HomeComponent implements OnInit {
 
-  employeeDetail;
-  constructor() { }
+  employeeDetail : any;
+  isInitialize=false;
+  constructor() {
+    
+   }
 
   ngOnInit() {
-  this.employeeDetail=JSON.parse(sessionStorage.getItem('userObject'));
-  console.log(this.employeeDetail.empname);
+    console.log("in init");
   }
 
-getUserObjectFromSession()
-{
+  ngDoCheck(){
+    console.log("in do check");
 
-  
- // this.employeeDetail=sessionStorage.getItem("userObject");
-}
+    this.employeeDetail = JSON.parse(sessionStorage.getItem('userObject'));
+    console.log(this.employeeDetail.empname);
+
+   
+  }
 
 }

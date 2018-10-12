@@ -24,6 +24,7 @@ export class LoginAppComponent implements OnInit {
   constructor( private LoginCheckService : ConsumeDataService, private route:Router) {}
 
   ngOnInit() {
+    
   }
 
 loginCheck(username:string, password: string)
@@ -35,7 +36,7 @@ loginCheck(username:string, password: string)
 
     if(this.log=='USER FOUND')
     {
-        this.userObject(username);
+        this.userObject(username);       
         this.route.navigate([this.redirectUrl]);
     }
   });

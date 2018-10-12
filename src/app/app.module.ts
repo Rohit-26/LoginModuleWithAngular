@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HttpClientModule } from '@angular/common/http';
 import { AllContactsDataComponent } from './all-contacts-data/all-contacts-data.component';
 import { LoginAppComponent } from './login-app/login-app.component';
+import { LogoutAppComponent } from './logout-app/logout-app.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginAppComponent } from './login-app/login-app.component';
     SearchComponent,
     PageNotFoundComponent,
     AllContactsDataComponent,
-    LoginAppComponent
+    LoginAppComponent,
+    LogoutAppComponent
   ],
   imports: [
     BrowserModule,
